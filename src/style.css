@@ -3,8 +3,20 @@ body {
     font-family: Helvetica, sans-serif;
     font-size: 16px;
 }
+.container{
+    padding-bottom: 100px;
+}
+
+.fixed-wrapper {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5fbff;;
+}
 
 .message {
+    width:fit-content;
+    margin-bottom: 20px;
     position: relative;
     padding: 12px 15px;
     background: white;
@@ -19,14 +31,14 @@ body {
     left: 0;
     top: 0;
     transform: translateX(-10px);
-    width: 0; 
-    height: 0; 
-    border-bottom: 17px solid transparent; 
-    border-right: 17px solid white; 
+    width: 0;
+    height: 0;
+    border-bottom: 17px solid transparent;
+    border-right: 17px solid white;
 }
 
 .message.self {
-    background: $blue;
+    background: blue;
     color: white;
 }
 
@@ -35,5 +47,5 @@ body {
     right: 0;
     transform: translateX(10px);
     border-right: 0;
-    border-left: 17px solid $blue; 
+    border-left: 17px solid blue;
 }

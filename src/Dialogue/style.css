@@ -1,0 +1,5 @@
+.message-wrapper.self{
+    display: flex;
+    flex-direction: row-reverse;
+}
+

@@ -14,7 +14,6 @@ const Typing = () => {
                 const now = Date.now();
                 if(now >= time + 8000) {
                     const typingInfoAfterClean = typingInfo.filter(item => item.user !== userTyping)
-                    console.log(typingInfoAfterClean, 'after')
                     saveTypingInfo(typingInfoAfterClean);
                 }
             }, 8000);
